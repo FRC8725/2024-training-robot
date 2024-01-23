@@ -18,6 +18,7 @@ public class JoystickChassis extends Command {
     leftSupplier = leftJoystick;
     rightSupplier = rightJoystick;
     // Use addRequirements() here to declare subsystem dependencies.
+    addRequirements(ChassisSubsystem.getInstance());
   }
 
   // Called when the command is initially scheduled.

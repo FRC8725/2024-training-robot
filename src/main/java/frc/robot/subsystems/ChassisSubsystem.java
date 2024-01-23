@@ -39,9 +39,9 @@ public class ChassisSubsystem implements Subsystem {
         // TODO: Set the default command, if any, for this subsystem by calling setDefaultCommand(command)
         //       in the constructor or in the robot coordination class, such as RobotContainer.
         leftFront_tank = new WPI_VictorSPX(RobotMap.Tank.leftFrontMotor);
-        leftBack_tank = new WPI_VictorSPX(RobotMap.Tank.leftBack_motor);
-        rightBack_tank = new WPI_VictorSPX(RobotMap.Tank.rightBack_tank);
-        rightFront_tank = new WPI_VictorSPX(RobotMap.Tank.rightFront_tank);
+        leftBack_tank = new WPI_VictorSPX(RobotMap.Tank.leftBackMotor);
+        rightBack_tank = new WPI_VictorSPX(RobotMap.Tank.rightBackMotor);
+        rightFront_tank = new WPI_VictorSPX(RobotMap.Tank.rightFrontMotor);
         
         leftBack_tank.follow(leftFront_tank);
         rightBack_tank.follow(rightFront_tank);
